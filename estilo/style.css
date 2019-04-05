@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+form{
+    background-color: azure;
+    width: 45%;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 20px;
+    border: 1px solid rgba(77, 195, 232, 1);
+    border-radius: 3px;
+}
+
+header{
+    background-color: azure;
+    width: 100%;
+    padding-top: 20px; 
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(77, 195, 232, 1);
+    text-align: center;
+    color: #106BA0;
+}
+
+header > p:nth-child(1){
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+
+header > p:nth-child(3){
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+header > hr{
+    border-color:rgba(77, 195, 232, 1);
+    width: 30%;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+header > nav{
+    width: 45%;
+    margin: auto;
+}
+
+header > nav > ul{
+    width: 100%;
+}
+
+header > nav > ul > li{
+    display: inline-block;
+    width: 49%;
+    box-sizing: border-box;
+    padding: 10px;
+    background: #106BA0;
+}
+
+header > nav > ul > li > a{
+    text-decoration: none;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+input[type="file"]#curriculum, input[type="file"]#imagen {
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    margin-left: -50px;
+    margin-top: 20px;
+    z-index: -1;
+}
+
+label[for="curriculum"], label[for="imagen"] {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #106BA0;
+    display: inline-block;
+    transition: all .5s;
+    cursor: pointer;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    width: fit-content;
+    text-align: center;
+}
+
+input[type="submit"]#enviar{
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(16, 150, 160, 1);
+    display: inline-block;
+    transition: all .5s;
+    cursor: pointer;
+    padding: 15px 40px;
+    border: none;
+    text-transform: uppercase;
+    width: fit-content;
+    text-align: center;
+    margin: 5px;
+}
+
+form > p{
+    color: #106BA0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.mensaje{
+    background-color:#7f0000;
+    width: 45%;
+    margin: auto;
+    height: 60px;
+    color: white;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 3px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.mensaje > p{
+    line-height: 60px;
+    font-size: 16px;
+}
